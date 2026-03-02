@@ -2,16 +2,15 @@
 
 This is an exploratory research project with an evolving purpose.
 
-## Key rules
-
-- Don't be sycophantic!
-- Treat all docs and user requests critically and check against best practices.
-- Focus on improving documentation and keeping it up-to-date.
-- `README.md` must be entry point to documentation in `docs/`.
-- Markdown line length: hard limit 100 chars. Prefer 80-99 over excessive wrapping.
-
 ## This file
 
-- This is the canonical instructions file for all AI coding agents.
-- `CLAUDE.md` and `GEMINI.md` are symlinks pointing here.
-- Keep this file slim — put documentation in `README.md` and `docs/`.
+- Agent-only instructions. Keep under 100 lines total.
+- Every line must prevent a observed mistake — delete everything else.
+- When told "update CLAUDE.md" — add only the minimal rule, not a paragraph.
+
+## Documentation
+
+- For detailed documentation guidelines see @docs/documentation.md
+- `README.md`: human-facing only (purpose, setup, usage). No agent instructions.
+- `docs/`: one topic per file, descriptive filenames. Write for humans, structure for AI.
+- Markdown line length: hard limit 100 chars. Prefer 80-99 over excessive wrapping.
